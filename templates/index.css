@@ -22,4 +22,14 @@
     background-color: #009A61;
     color: #fff;
     border-radius: 4px;
+
+
+}
+
+.content{
+    color: rgba(0,0,0,0.45);
+    font-size: 0.9em;
+}
+.left-style{
+    color: rgba(0,0,0,0.50);
 }
