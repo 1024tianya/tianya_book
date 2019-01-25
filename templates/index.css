@@ -1,0 +1,25 @@
+.left-with {
+    width: 100%;
+    background-color: black;
+}
+
+/*.box-item{*/
+/*background-color: #009A61;*/
+/*color: #fff;*/
+/*border-radius:4px;*/
+/*}*/
+
+.new_info {
+    font-size: 0.7em;
+    color: #666;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.left-action {
+    background-color: #009A61;
+    color: #fff;
+    border-radius: 4px;
+}
