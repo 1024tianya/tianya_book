@@ -1,35 +1,121 @@
-.left-with {
-    width: 100%;
-    background-color: black;
+
+header {
+    position: relative;
+    z-index: 100;
+    min-width: 100%;
+    overflow: hidden;
+    background-clip: content-box;
+    background-color: azure;
 }
 
-/*.box-item{*/
-/*background-color: #009A61;*/
-/*color: #fff;*/
-/*border-radius:4px;*/
+#nav {
+    background-color: azure;
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 52px;
+    padding: 0 16px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/*#nav ul{*/
+/*display: block;*/
 /*}*/
 
-.new_info {
-    font-size: 0.7em;
-    color: #666;
+#nav ul {
+    display: block;
+    margin: 0 auto;
 }
 
-.hand {
-    cursor: pointer;
-}
-
-.left-action {
-    background-color: #009A61;
-    color: #fff;
-    border-radius: 4px;
-
+#nav ul li {
+    display: inline-block;
 
 }
 
-.content{
-    color: rgba(0,0,0,0.45);
-    font-size: 0.9em;
+#nav ul li a {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8590A6;
 }
-.left-style{
-    color: rgba(0,0,0,0.50);
+
+#nav .seach {
+    position: relative;
+    display: flex;
+    height: 34px;
+}
+
+#nav .seach button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    background: transparent;
+    border: none
+}
+
+#nav .right {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+#nav .right .nav-right a {
+    margin-right: 20px;
+
+}
+
+#container {
+
+    display: flex;
+    width: 1000px;
+    margin:60px auto 0 auto;
+    align-items: center;
+
+}
+.container-left{
+    display: block;
+    width: 182px;
+    height: 100px;
+
+}
+.container-left h5{
+    color: #212121;
+    font-size: 14px;
+    margin:0 5px 10px 20px;
+}
+.container-left h5::after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #eee;
+    width: 95px;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.container-left ul{
+     color: #757575;
+     margin:30px auto 0 auto;
+}
+.container-left ul li{
+     margin:10px auto 0 auto;
+}
+.container-middle{
+    width: 635px;
+    height: 100px;
+}
+.container-right{
+     width: 182px;
+    height: 100px;
+}
+.middle-tag ul{
+    border-bottom:2px solid #eee ;
+}
+.middle-tag ul li{
+    font-size: 16px;
+    display: inline-block;
+    margin:20px 5px 1px auto;
+
 }

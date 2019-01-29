@@ -1,506 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet" type="text/css"/>
-    <title>Hello, world!</title>
+
+
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">首页
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">问答</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">频道</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">讲堂</a>
-                </li>
+<header>
+    <div id="nav">
+        <a class="logo">
+            <img src="img/logo.png" width="64" height="30">
+        </a>
+        <ul>
+            <li>
+                <a>
+                    首页
+                </a>
 
-            </ul>
-            <div>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle border"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            创建
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <a class="dropdown-item" href="#">提问题</a>
-                            <a class="dropdown-item" href="#">发文章</a>
+            </li>
+            <li>
+                <a>
+                    热门
+                </a>
 
-                            <a class="border-top dropdown-item" href="#">草稿箱</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item ml-4 mt-1 hand">
-                    <a>
-                        <svg class="Zi Zi--Bell" fill="currentColor" width="22" height="22">
-                            <path d="M4.523 15.076l.804-6.757a6.753 6.753 0 0 1 4.945-5.7 1.823 1.823 0 0 1 3.623 0 6.753 6.753 0 0 1 4.945 5.7l.804 6.757a2.293 2.293 0 0 0 1.712 2.108 1.093 1.093 0 0 1-.297 2.15H3.108a1.093 1.093 0 0 1-.297-2.15 2.293 2.293 0 0 0 1.712-2.108zM12.083 23a2.758 2.758 0 0 1-2.753-2.509.229.229 0 0 1 .232-.24h5.043a.229.229 0 0 1 .232.24 2.759 2.759 0 0 1-2.753 2.51z"></path>
-                        </svg>
-                    </a>
+            </li>
+            <li>
+                <a>
+                    频道
+                </a>
 
-                </li>
-                <li class="nav-item ml-4 mt-1 hand">
-                    <a>
-                        <svg class="Zi Zi--Comments" fill="currentColor" width="22" height="22">
-                            <path d="M11 2c5.571 0 9 4.335 9 8 0 6-6.475 9.764-11.481 8.022-.315-.07-.379-.124-.78.078-1.455.54-2.413.921-3.525 1.122-.483.087-.916-.25-.588-.581 0 0 .677-.417.842-1.904.064-.351-.14-.879-.454-1.171A8.833 8.833 0 0 1 2 10c0-3.87 3.394-8 9-8zm10.14 9.628c.758.988.86 2.009.86 3.15 0 1.195-.619 3.11-1.368 3.938-.209.23-.354.467-.308.722.12 1.073.614 1.501.614 1.501.237.239-.188.562-.537.5-.803-.146-1.495-.42-2.546-.811-.29-.146-.336-.106-.563-.057-2.043.711-4.398.475-6.083-.927 5.965-.524 8.727-3.03 9.93-8.016z"
-                                  fill-rule="evenodd"></path>
-                        </svg>
-                    </a>
+            </li>
+            <li>
+                <a>
+                    发现
+                </a>
+            </li>
+            <li>
+                <a>
+                    提问
+                </a>
+            </li>
+            <li>
+                <a>
+                    精选
+                </a>
 
-                </li>
-                <li class="nav-item  ml-4 hand">
-                    <a>
-                        <img src="img/user.jpg">
-                    </a>
+            </li>
+        </ul>
+        <div class="seach">
+            <input type="text" value="">
+            <button>
+                <svg class="Zi Zi--Search" fill="currentColor" viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M17.068 15.58a8.377 8.377 0 0 0 1.774-5.159 8.421 8.421 0 1 0-8.42 8.421 8.38 8.38 0 0 0 5.158-1.774l3.879 3.88c.957.573 2.131-.464 1.488-1.49l-3.879-3.878zm-6.647 1.157a6.323 6.323 0 0 1-6.316-6.316 6.323 6.323 0 0 1 6.316-6.316 6.323 6.323 0 0 1 6.316 6.316 6.323 6.323 0 0 1-6.316 6.316z"
+                          fill-rule="evenodd"></path>
+                </svg>
 
-                </li>
-            </ul>
+            </button>
         </div>
-    </div>
-
-</nav>
+        <div class="right">
 
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-sm-2 box-item left-style">
-            <div class="p-1 hand " style="">
+            <div class="nav-right">
+
                 <a>
-                    <i>
-                        <img src="img/file.png" class="img-responsive" alt="Cinque Terre" width="15" height="15">
-                    </i>
-                    <span class="container">
-                     我的订阅
-                </span>
+                    <img src="img/ding.png" height="20" width="20">
                 </a>
-            </div>
-            <div class="p-1 hand">
                 <a>
-                    <i>
-                        <img src="img/good.png" class="img-responsive" alt="Cinque Terre" width="15" height="15">
-                    </i>
-                    <span class="container">
-                      热门内容
-                    </span>
+                    <img src="img/email.png" width="20" height="20">
                 </a>
-            </div>
-
-            <div class="p-1 hand">
                 <a>
-                    <i>
-                        <img src="img/member.png" class="img-responsive" alt="Cinque Terre" width="15" height="15">
-                    </i>
-                    <span class="container">
-                     我的关注
-                </span>
+                    <img src="img/user-64.png" width="30" height="30">
                 </a>
-            </div>
-            <div class="p-1 hand">
-                <a>
-                    <i>
-                        <img src="img/list.png" class="img-responsive" alt="Cinque Terre" width="15" height="15">
-                    </i>
-                    <span class="container">
-                     我的收藏
-                   </span>
-                </a>
-            </div>
-            <div class="p-1 hand left-action">
-                <a>
-                    <i>
-                        <img src="img/class_action.png" class="img-responsive" alt="Cinque Terre" width="15" height="15">
-                    </i>
-                    <span class="container">
-                     栏目分类
-                </span>
-                </a>
-            </div>
-
-        </div>
-        <div class="col-sm-8">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/1313011719-5bc6a63ef190f.png" alt="First slide"
-                             style="border-radius:4px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/1313011719-5bc6a63ef190f.png" alt="Second slide"
-                             style="border-radius:4px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/1313011719-5bc6a63ef190f.png" alt="Third slide"
-                             style="border-radius:4px;">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <div class="mt-4 mb-4 border-bottom">
-                <span>为你推荐</span>
-            </div>
-            <div class="mt-4 hand">
-                <div>
-                    <a>
-                        <div class="mb5 mt5"><h4 class="news__item-title mt0">在使用新的JavaScript库时需要考虑的12件事 </h4></div>
-
-                        <div class="row">
-                            <div class="col-10 container content" >
-                                对于今年的JavaScript状态调查，我想深入挖掘一下，不仅知道人们正在使用哪些工具和库，还要为什么他们选择使用它们。
-                            </div>
-                            <div class="col-2 container">
-                                <img src="https://image-static.segmentfault.com/285/737/2857378391-5bcd1e36aeb3b_articlex"
-                                     style="width: 80px; height: 60px;">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="new_info">
-                    <a>
-                        <i>
-                            <img src="img/wrap.png" width="30" height="30">
-                        </i>
-                        <span class="ml-2">
-                            48
-                        </span>
-                        <span class="ml-2">
-                            ·
-                        </span>
-                        <span class="ml-2">
-                            赞
-                        </span>
-                    </a>
-                    <span class="ml-3">收藏</span>
-                    <a class="ml-4" href="/u/langlixingzhou">浪里行舟</a><span class="ml-2">·</span><span
-                        class="ml-2">4 小时前</span>
-                </div>
-            </div>
-            <div class="mt-4 hand">
-                <div>
-                    <a>
-                        <div class="mb5 mt5"><h4 class="news__item-title mt0">JavaScript中的执行上下文 </h4></div>
-
-                        <div class="row">
-                            <div class="col-10 container content">
-
-                                在这篇文章中，我将深入探讨JavaScript的最基本部分之一，即Execution Context(执行上下文)。
-                                在本文结束时，你应该对解释器了解得更清楚：为什么在声明它们之前可以使用某些函数或变量？以及它们的值是如何确定的？
-
-                            </div>
-                            <div class="col-2 container">
-                                <img src="https://image-static.segmentfault.com/958/498/958498578-5bab346a45d0d_articlex"
-                                     style="width: 80px; height: 60px;">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="new_info">
-                    <a>
-                        <i>
-                            <img src="img/wrap.png" width="30" height="30">
-                        </i>
-
-                        <span class="ml-2">
-                            48
-                        </span>
-                        <span class="ml-2">
-                            ·
-                        </span>
-                        <span class="ml-2">
-                            赞
-                        </span>
-                    </a>
-
-                    <span class="ml-3">收藏</span>
-
-                    <a class="ml-4" href="/u/langlixingzhou">浪里行舟</a><span class="ml-2">·</span><span
-                        class="ml-2">4 小时前</span>
-                </div>
-            </div>
-            <div class="mt-4 hand">
-                <div>
-                    <a>
-                        <div class="mb5 mt5"><h4 class="news__item-title mt0">TypeScript 3.3来了！快看看有什么新功能 </h4></div>
-
-                        <div class="row">
-                            <div class="col-10 container content">
-
-                                在TypeScript的早期版本中，不同的联合类型如果想互相访问其取值，它们参数的取值列表必须完全一致才行。
-                            </div>
-                            <div class="col-2 container">
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="new_info">
-                    <a>
-                        <i>
-                            <img src="img/wrap.png" width="30" height="30">
-                        </i>
-
-                        <span class="ml-2">
-                            48
-                        </span>
-                        <span class="ml-2">
-                            ·
-                        </span>
-                        <span class="ml-2">
-                            赞
-                        </span>
-                    </a>
-
-                    <span class="ml-3">收藏</span>
-
-                    <a class="ml-4" href="/u/langlixingzhou">浪里行舟</a><span class="ml-2">·</span><span
-                        class="ml-2">4 小时前</span>
-                </div>
-            </div>
-            <div class="mt-4 hand">
-                <div>
-                    <a>
-                        <div class="mb5 mt5"><h4 class="news__item-title mt0">JavaScript中的执行上下文 </h4></div>
-
-                        <div class="row">
-                            <div class="col-10 container content">
-
-                                在这篇文章中，我将深入探讨JavaScript的最基本部分之一，即Execution Context(执行上下文)。
-                                在本文结束时，你应该对解释器了解得更清楚：为什么在声明它们之前可以使用某些函数或变量？以及它们的值是如何确定的？
-
-                            </div>
-                            <div class="col-2 container">
-                                <img src="https://image-static.segmentfault.com/958/498/958498578-5bab346a45d0d_articlex"
-                                     style="width: 80px; height: 60px;">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="new_info">
-                    <a>
-                        <i>
-                            <img src="img/wrap.png" width="30" height="30">
-                        </i>
-
-                        <span class="ml-2">
-                            48
-                        </span>
-                        <span class="ml-2">
-                            ·
-                        </span>
-                        <span class="ml-2">
-                            赞
-                        </span>
-                    </a>
-
-                    <span class="ml-3">收藏</span>
-
-                    <a class="ml-4" href="/u/langlixingzhou">浪里行舟</a><span class="ml-2">·</span><span
-                        class="ml-2">4 小时前</span>
-                </div>
-            </div>
-            <div class="mt-4 hand">
-                <div>
-                    <a>
-                        <div class="mb5 mt5"><h4 class="news__item-title mt0">JavaScript中的执行上下文 </h4></div>
-
-                        <div class="row">
-                            <div class="col-10 container content">
-
-                                在这篇文章中，我将深入探讨JavaScript的最基本部分之一，即Execution Context(执行上下文)。
-                                在本文结束时，你应该对解释器了解得更清楚：为什么在声明它们之前可以使用某些函数或变量？以及它们的值是如何确定的？
-
-                            </div>
-                            <div class="col-2 container">
-                                <img src="https://image-static.segmentfault.com/958/498/958498578-5bab346a45d0d_articlex"
-                                     style="width: 80px; height: 60px;">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="new_info">
-                    <a>
-                        <i>
-                            <img src="img/wrap.png" width="30" height="30">
-                        </i>
-
-                        <span class="ml-2">
-                            48
-                        </span>
-                        <span class="ml-2">
-                            ·
-                        </span>
-                        <span class="ml-2">
-                            赞
-                        </span>
-                    </a>
-
-                    <span class="ml-3">收藏</span>
-
-                    <a class="ml-4" href="/u/langlixingzhou">浪里行舟</a><span class="ml-2">·</span><span
-                        class="ml-2">4 小时前</span>
-                </div>
-            </div>
-            <div class="mt-4 hand">
-                <div>
-                    <a>
-                        <div class="mb5 mt5"><h4 class="news__item-title mt0">JavaScript中的执行上下文 </h4></div>
-
-                        <div class="row">
-                            <div class="col-10 container content">
-
-                                在这篇文章中，我将深入探讨JavaScript的最基本部分之一，即Execution Context(执行上下文)。
-                                在本文结束时，你应该对解释器了解得更清楚：为什么在声明它们之前可以使用某些函数或变量？以及它们的值是如何确定的？
-
-                            </div>
-                            <div class="col-2 container">
-                                <img src="https://image-static.segmentfault.com/958/498/958498578-5bab346a45d0d_articlex"
-                                     style="width: 80px; height: 60px;">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="new_info">
-                    <a>
-                        <i>
-                            <img src="img/wrap.png" width="30" height="30">
-                        </i>
-
-                        <span class="ml-2">
-                            48
-                        </span>
-                        <span class="ml-2">
-                            ·
-                        </span>
-                        <span class="ml-2">
-                            赞
-                        </span>
-                    </a>
-
-                    <span class="ml-3">收藏</span>
-
-                    <a class="ml-4" href="/u/langlixingzhou">浪里行舟</a><span class="ml-2">·</span><span
-                        class="ml-2">4 小时前</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="row">
-                <div class="col-sm rounded border-top border-bottom hand">好友</div>
-                <div class="col-sm rounded border hand">群组</div>
-                <div class="col-sm rounded border-top border-bottom hand">动态</div>
-            </div>
-            <div class="mt-2 pb-2 border-bottom">
-
-                 <div  class="mt-2 pb-2 border-bottom" >
-                    <i>
-                        <img src="img/down.png" alt="" class="img-circle" width="15" height="15"
-                             style="border-radius:50%;">
-                    </i>
-
-                </div>
-
-                <div  class="mt-2 pb-2 border-bottom hand" style="width: 100%; text-overflow:ellipsis;overflow:hidden;white-space: nowrap">
-                    <i>
-                        <img src="img/heard.jpeg" alt="" class="img-circle" width="25" height="25"
-                             style="border-radius:50%;">
-                    </i>
-                    <span class=" ml-2" style="text-overflow:ellipsis;overflow:hidden">
-                        朱家聪
-                    </span>
-                </div>
-
-                <div class="mt-2 pb-2 border-bottom hand">
-                    <div style="width: 100%; text-overflow:ellipsis;overflow:hidden;white-space: nowrap">
-                        <i>
-                            <img src="img/heard.jpeg" alt="" class="img-circle" width="25" height="25"
-                                 style="border-radius:50%;">
-                        </i>
-                        <span class=" ml-2" style="text-overflow:ellipsis;overflow:hidden">
-                        天涯
-                    </span>
-                    </div>
-                </div>
-                <div class="mt-2 pb-2 border-bottom hand">
-                    <div style="width: 100%; text-overflow:ellipsis;overflow:hidden;white-space: nowrap">
-                        <i>
-                            <img src="img/heard.jpeg" alt="" class="img-circle" width="25" height="25"
-                                 style="border-radius:50%;">
-                        </i>
-                        <span class=" ml-2" style="text-overflow:ellipsis;overflow:hidden">
-                        enkflg
-                    </span>
-                    </div>
-                </div>
-                <div class="mt-2 pb-2 border-bottom hand">
-                    <div style="width: 100%; text-overflow:ellipsis;overflow:hidden;white-space: nowrap">
-                        <i>
-                            <img src="img/heard.jpeg" alt="" class="img-circle" width="25" height="25"
-                                 style="border-radius:50%;">
-                        </i>
-                        <span class=" ml-2" style="text-overflow:ellipsis;overflow:hidden">
-                        111111111111111111111111111111111
-                    </span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2">
+</header>
+<div id="container">
+    <div class="container-left">
+        <h5>分类</h5>
+        <ul style="list-style:none">
+            <li><a>前端</a></li>
+            <li><a>行业</a></li>
+            <li><a>小程序</a></li>
+            <li><a>ios</a></li>
+            <li><a>安卓</a></li>
+            <li><a>安全</a></li>
+            <li><a>工具</a></li>
+            <li><a>程序员</a></li>
+        </ul>
 
     </div>
+    <div class="container-middle">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/1913281239-5c4ab1b8a0180.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/1913281239-5c4ab1b8a0180.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/1913281239-5c4ab1b8a0180.jpeg" alt="First slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="middle-tag">
+           <ul style="list-style:none">
+               <li>
+                   <a>
+                       <p>推荐</p>
+                   </a>
+               </li>
+               <li>
+                    <a>
+                        <p>热度</p>
+                    </a>
+               </li>
+               <li>
+                    <a>
+                        <p>
+                            近期更新
+                        </p>
+                    </a>
+               </li>
+           </ul>
+        </div>
+    </div>
+    <div class="container-right"></div>
 </div>
-</div>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 </html>
