@@ -1,0 +1,74 @@
+* a{
+    cursor:pointer
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    position: relative;
+    z-index: 100;
+    min-width: 100%;
+    overflow: hidden;
+    background-clip: content-box;
+    background-color: azure;
+}
+
+#nav {
+    background-color: azure;
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 52px;
+    padding: 0 16px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/*#nav ul{*/
+/*display: block;*/
+/*}*/
+
+#nav ul {
+    display: block;
+    margin: 0 auto;
+}
+
+#nav ul li {
+    display: inline-block;
+
+}
+
+#nav ul li a {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8590A6;
+}
+
+#nav .seach {
+    position: relative;
+    display: flex;
+    height: 34px;
+}
+
+#nav .seach button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    background: transparent;
+    border: none
+}
+
+#nav .right {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+#nav .right .nav-right a {
+    margin-right: 20px;
+
+}

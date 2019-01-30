@@ -1,4 +1,6 @@
-
+* a{
+    cursor:pointer
+}
 header {
     position: relative;
     z-index: 100;
@@ -71,21 +73,24 @@ header {
 
     display: flex;
     width: 1000px;
-    margin:60px auto 0 auto;
+    margin: 60px auto 0 auto;
     align-items: center;
 
 }
-.container-left{
+
+.container-left {
     display: block;
-    width: 182px;
+    width: 150px;
     height: 100px;
 
 }
-.container-left h5{
+
+.container-left h5 {
     color: #212121;
     font-size: 14px;
-    margin:0 5px 10px 20px;
+    margin: 0 5px 10px 20px;
 }
+
 .container-left h5::after {
     position: absolute;
     content: '';
@@ -95,27 +100,117 @@ header {
     margin-top: 8px;
 }
 
-.container-left ul{
-     color: #757575;
-     margin:30px auto 0 auto;
+.container-left ul {
+    color: #757575;
+    margin: 30px auto 0 auto;
 }
-.container-left ul li{
-     margin:10px auto 0 auto;
+
+.container-left ul li {
+    margin: 10px auto 0 auto;
 }
-.container-middle{
+
+.container-middle {
     width: 635px;
     height: 100px;
 }
-.container-right{
-     width: 182px;
+
+.container-right {
+    width: 212px;
     height: 100px;
 }
-.middle-tag ul{
-    border-bottom:2px solid #eee ;
-}
-.middle-tag ul li{
-    font-size: 16px;
-    display: inline-block;
-    margin:20px 5px 1px auto;
 
+.middle-tag ul {
+    padding-top: 20px;
+    padding-left: 0;
+    border-bottom: 2px solid #eee;
+
+}
+
+.middle-tag ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.img {
+    float: right;
+}
+
+.middle-article {
+    margin: 25px 0 0 0;
+}
+
+.middle-article a div h4 {
+    font-size: 16px;
+}
+
+.middle-article a div div {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #999;
+}
+
+.middle-article-tag {
+    font-size: 13px;
+    margin: 10px 4px 10px 0;
+}
+
+.awesome {
+    color: #009a61
+}
+
+.middle-article-tag .margin {
+    margin: 0 15px 0 0;
+
+}
+
+.middle-article-tag .time {
+    color: #999;
+}
+
+.container-right div {
+    color: #444444;
+    font-size: 14px;
+    display: flex;
+    justify-content: center; /*项目在主轴上的对齐方式*/
+
+}
+
+.container-right div a {
+    margin: 0 10px 10px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+
+}
+
+.container-right div a img {
+    float: contour;
+}
+
+
+.container-card ul {
+    width: 100%;
+    padding: 8px 0;
+    list-style-type: none;
+
+
+}
+
+.container-card ul li {
+    line-height: 30px;
+     text-align: center;
+
+}
+.container-card ul li a{
+    display:inline-block;
+
+}
+
+.container-card ul li a img{
+     margin: 0 20px 0 0;
 }
