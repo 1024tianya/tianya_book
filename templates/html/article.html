@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>wangEditor 菜单和编辑器区域分离</title>
     <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         .toolbar {
             border: 1px solid #ccc;
         }
@@ -21,19 +26,120 @@
             left: 0;
             right: 0;
         }
-        #class_name{
+
+        #class_name {
             width: 730px;
         }
-        #tag{
-            width: 50%;
+
+        header {
+            position: relative;
+            z-index: 100;
+            min-width: 100%;
+            height: 53px;
+            overflow: hidden;
+            background-clip: content-box;
+            background-color: azure;
         }
+
+        .sf-tag {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            display: block;
+            color: #555;
+            vertical-align: middle;
+            border-radius: 4px;
+            cursor: text;
+            width: 500px;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 5px 5px 0 5px;
+        }
+
+        .sf-tag input {
+            border: none;
+            box-shadow: none;
+            outline: none;
+            background-color: transparent;
+            padding: 0;
+            margin: 0 0 5px 0;
+            text-transform: lowercase;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .span-tag {
+            display: inline-block;
+            color: #017e66;
+            background-color: #e7f2ed;
+            font-size: 13px;
+            text-align: center;
+            margin-right: .5rem;
+            padding: 0 6px;
+            height: 22px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            display: block;
+            width: 150px;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42858;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-control option {
+            background-color: #fff;
+        }
+
+        select:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+
     </style>
 </head>
 <body>
+<header>
+    <div id="nav">
+        <a class="logo" href="/">
+            <img src="../img/logo.png" width="64" height="30"
+                 style="position: absolute;top: 0; bottom: 0; margin: auto;">
+        </a>
 
-<div id="action">
-    <input id="class_name" placeholder="选择下面的类目">
-    <input id="tag" placeholder="输入标签最多三个">
+    </div>
+    <div>
+        <button id="btn1" onFocus="this.blur()" style="width:60px; height: 40px; position: absolute;top: 0; bottom: 0; margin: auto ;right: 30px; background-color: #009a61;border-color: #008151; border-radius: 4px;">发布</button>
+    </div>
+</header>
+<div id="action" style="margin-top:20px">
+    <input id="class_name" placeholder="标题：用一句话表达清楚"
+           style="width: 100%;height: 46px; background-color: #fff; border: 1px solid #ccc;  border-radius: 4px; margin-bottom: 20px">
+    <select class="form-control" style="margin-bottom: 20px">
+        <option value="0" disabled selected="">频道(必选)</option>
+        <option value="1">IT</option>
+        <option value="2">医药</option>
+        <option value="3">金融</option>
+        <option value="4">其他</option>
+    </select>
+    <div class="sf-tag" style="margin-bottom: 20px">
+        <span class="span-tag">aaa
+        <span class="remove">x</span></span>
+
+        <span class="span-tag">bbb
+         <span class="remove">x</span></span>
+
+        <input placeholder="标签：最多三个 分隔符分开如(php;java,)">
+    </div>
     <div id="div1" class="toolbar">
     </div>
     <div style="padding: 5px 0; color: #ccc"></div>
@@ -45,7 +151,13 @@
     <script type="text/javascript">
         var E = window.wangEditor
         var editor1 = new E('#div1', '#div2')  // 两个参数也可以传入 elem 对象，class 选择器
+
         editor1.create()
+
+        document.getElementById('btn1').addEventListener('click', function () {
+            // 读取 html
+            alert(editor.txt.html())
+        }, false)
     </script>
 </div>
 </body>
