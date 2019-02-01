@@ -1,0 +1,19 @@
+.draft-box{
+width: 1196px;
+height: 900px;
+margin: 20px auto;
+border: 1px solid #a1a1a1;
+border-radius: 5px;
+}
+.draft-tag{
+     margin: 30px 0 0 40px;
+     border-bottom: 1px solid #ccc;
+}
+.draft-min{
+    margin: 30px 0 0 40px;
+
+}
+.draft-min span{
+    color: #BBB;
+    font-size: 13px;
+}

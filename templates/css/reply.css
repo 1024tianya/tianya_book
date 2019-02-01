@@ -1,0 +1,39 @@
+.reply-left{
+    width: 1196px;
+    height: 900px;
+    margin: 20px auto;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+}
+.reply-left-tag{
+
+    height: 34px;
+    margin: 30px 0 0 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.reply-left-tag li{
+    text-align: center;
+    display: inline-block;
+    width: 84px;
+    height: 100%;
+    border-radius:3px;
+    /*padding: 15px 15px 15px 15px;*/
+
+
+}
+
+.reply-left-tag .tag1{
+    background: #fff!important;
+    border: 1px solid #ccc;
+    border-bottom-color: transparent;
+}
+
+.left1{
+    display: block;
+}
+.left2{
+     margin: 30px 0 0 40px;
+
+    display: block;
+}
